@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+
+  header {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+    .contents {
+      position: fixed;
+      z-index: 2;
+      display: flex;
+      .logo {
+        margin-left: 30px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .gnb /*메뉴*/ {
+        margin-left: 540px;
+        ul {
+          display: flex;
+          li {
+            margin-right: 85px;
+            margin-top: 20px;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 25px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #111;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    strong {
+      font-weight: 700;
+    }
+  }
+}

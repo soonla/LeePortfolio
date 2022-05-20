@@ -1,0 +1,79 @@
+.wrap {
+  video {
+    width: 100%;
+    margin-top: -30px;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+.main {
+  .about {
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    height: 900px;
+
+    .about_wrap {
+      padding: 30px;
+
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        background-color: #fff;
+      }
+      .txtBox {
+        background-color: skyblue;
+        font-size: 20px;
+        text-align: center;
+        width: 250px;
+        height: 200px;
+        float: left;
+        background-color: blue;
+        margin-top: 100px;
+        .title {
+          background-color: red;
+        }
+        .txt {
+          background-color: pink;
+        }
+      }
+      .pic {
+        float: right;
+
+        img {
+          margin-top: 120px;
+          margin-left: 600px;
+        }
+      }
+    }
+  }
+  .archive {
+    display: flex;
+    justify-content: center;
+    background-color: magenta;
+    height: 900px;
+  }
+  // .project {
+  // }
+  // .contact {
+  // }
+}
+.top_button {
+  span {
+    a {
+      z-index: 2;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      position: fixed;
+      top: 85%;
+      right: 3%;
+      background-color: red;
+      border-radius: 25px;
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+}
