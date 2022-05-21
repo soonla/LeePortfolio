@@ -6,7 +6,7 @@ body header .contents { position: fixed; z-index: 2; display: -webkit-box; displ
 
 body header .contents .logo { margin-left: 30px; }
 
-body header .contents .logo img { width: 100px; height: 100px; }
+body header .contents .logo div { margin-top: 20px; color: cornflowerblue; font-size: 30px; font-weight: 400; }
 
 body header .contents .gnb { margin-left: 540px; }
 

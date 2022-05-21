@@ -1,78 +1,218 @@
-.wrap {
-  video {
-    width: 100%;
-    margin-top: -30px;
-    height: 100%;
-    overflow: hidden;
+body {
+  .wrap {
+    video {
+      width: 100%;
+      margin-top: -30px;
+      height: 100%;
+      overflow: hidden;
+    }
   }
-}
-.main {
-  .about {
-    display: flex;
-    justify-content: center;
-    background-color: yellowgreen;
-    height: 900px;
+  .main {
+    .about {
+      display: flex;
+      justify-content: center;
+      background-color: yellowgreen;
+      height: 900px;
 
-    .about_wrap {
-      padding: 30px;
+      .about_wrap {
+        padding: 30px;
 
-      h2 {
-        font-size: 40px;
-        font-weight: 600;
-        background-color: #fff;
-      }
-      .txtBox {
-        background-color: skyblue;
-        font-size: 20px;
-        text-align: center;
-        width: 250px;
-        height: 200px;
-        float: left;
-        background-color: blue;
-        margin-top: 100px;
-        .title {
-          background-color: red;
+        h2 {
+          width: 1200px;
+          font-size: 40px;
+          font-weight: 600;
+          background-color: #fff;
         }
-        .txt {
-          background-color: pink;
+        .txtBox {
+          background-color: skyblue;
+          font-size: 20px;
+          text-align: center;
+          width: 250px;
+          height: 200px;
+          float: left;
+          background-color: blue;
+          margin-top: 100px;
+          .title {
+            background-color: red;
+          }
+          .txt {
+            background-color: pink;
+          }
+        }
+        .pic {
+          float: right;
+
+          img {
+            margin-top: 120px;
+          }
         }
       }
-      .pic {
-        float: right;
+    }
+    .archive {
+      display: flex;
+      justify-content: center;
+      //background-color: magenta;
 
-        img {
-          margin-top: 120px;
-          margin-left: 600px;
+      height: 900px;
+      .archive_wrap {
+        padding: 50px;
+
+        h2 {
+          width: 1200px;
+          font-size: 40px;
+          font-weight: 600;
+          background-color: #fff;
+        }
+        .gitBox {
+          border: 3px solid #fff;
+          height: 800px;
+
+          .list {
+            margin-top: 180px;
+            display: flex;
+            justify-content: space-around;
+            li {
+              width: 500px;
+              border: 1px solid burlywood;
+              text-align: center;
+              transition: all 0.25s ease;
+              &:hover {
+                border-color: blue;
+                transform: translateY(-30px);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
+              }
+
+              a {
+                text-decoration: none;
+                color: blueviolet;
+
+                img {
+                  margin-top: 100px;
+                  width: 120px;
+                }
+
+                .txtBox {
+                  margin: 10px;
+                  background-color: #fff;
+                  margin-top: 10px;
+                  display: flex;
+                  justify-content: center;
+                  .link {
+                    margin: 20px 0 0 0;
+                    width: 180px;
+                    height: 50px;
+                    background-color: tomato;
+                    opacity: 0.7;
+                    border-radius: 50px;
+                    .btn {
+                      font-weight: 600;
+                      font-size: 25px;
+                    }
+                  }
+                }
+              }
+              p {
+                line-height: 1.5em;
+                font-size: 18px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+    .project {
+      display: flex;
+      justify-content: center;
+      background-color: limegreen;
+      height: 900px;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      background-color: cadetblue;
+      height: 900px;
+      .contact_wrap {
+        padding: 50px;
+        h2 {
+          width: 1200px;
+          font-size: 40px;
+          font-weight: 600;
+          background-color: #fff;
+        }
+        .contact_box {
+          height: 700px;
+          background-color: aquamarine;
+
+          ul {
+            font-size: 25px;
+            padding-left: 120px;
+            margin-top: 100px;
+            li {
+              margin-bottom: 20px;
+              display: flex;
+
+              dl {
+                dt {
+                  display: flex;
+
+                  margin-top: 20px;
+                }
+                dd {
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-  .archive {
-    display: flex;
-    justify-content: center;
-    background-color: magenta;
-    height: 900px;
+  .top_button {
+    span {
+      a {
+        z-index: 2;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        position: fixed;
+        top: 85%;
+        right: 3%;
+        background-color: red;
+        border-radius: 25px;
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
   }
-  // .project {
-  // }
-  // .contact {
-  // }
-}
-.top_button {
-  span {
-    a {
-      z-index: 2;
-      width: 80px;
-      height: 80px;
-      text-align: center;
-      position: fixed;
-      top: 85%;
-      right: 3%;
-      background-color: red;
-      border-radius: 25px;
-      img {
-        width: 65px;
-        height: 65px;
+  .popup {
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: block;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid red;
+    .contents {
+      padding: 50px;
+    }
+    .btns {
+      display: flex;
+      button {
+        width: 50%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        border-right: 1px solid #fff;
+        color: #666;
+        &.oneday {
+          background-color: #ccc;
+        }
       }
     }
   }
