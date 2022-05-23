@@ -16,12 +16,40 @@ body header .contents .gnb ul li { margin-right: 85px; margin-top: 20px; }
 
 body header .contents .gnb ul li a { text-decoration: none; color: #fff; font-size: 25px; font-weight: 500; }
 
-body footer { background-color: magenta; color: #fff; padding: 80px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; font-size: 20px; text-transform: uppercase; }
+footer { height: 11rem; padding-top: 3rem; background-color: #222; text-align: center; }
 
-body footer strong { font-weight: 700; }
+footer p { margin-top: 30px; font-size: 18px; text-transform: uppercase; color: #fff; }
 
-body footer .contact div { text-align: center; position: relative; }
+footer p strong { font-weight: 700; }
 
-body footer .contact div img { margin: 10px; height: 50px; border-radius: 10px; background-color: #fff; }
+footer .contact { margin-bottom: 1rem; }
 
-body footer .contact div .tistory { color: #111; }
+footer .contact .phone { background-color: #fff; position: relative; display: inline-block; width: 3rem; height: 3rem; padding: 2px; margin: 0 0.5rem; border-radius: 2rem; cursor: pointer; }
+
+footer .contact .phone :hover { opacity: 0.75; }
+
+footer .contact .phone img { width: 100%; }
+
+footer .contact .git { background-color: #fff; position: relative; display: inline-block; width: 3rem; height: 3rem; padding: 2px; margin: 0 0.5rem; border-radius: 2rem; cursor: pointer; }
+
+footer .contact .git :hover { opacity: 0.75; }
+
+footer .contact .git img { width: 100%; }
+
+footer .contact .tistory { position: relative; display: inline-block; width: 3rem; height: 3rem; padding: 2px; margin: 0 0.5rem; border-radius: 2rem; cursor: pointer; }
+
+footer .contact .tistory :hover { opacity: 0.75; }
+
+footer .contact .tistory img { width: 100%; }
+
+footer .contact .instagram { background-color: #fff; position: relative; display: inline-block; width: 3rem; height: 3rem; padding: 2px; margin: 0 0.5rem; border-radius: 2rem; cursor: pointer; }
+
+footer .contact .instagram :hover { opacity: 0.75; }
+
+footer .contact .instagram img { width: 100%; }
+
+footer .contact .email { background-color: #fff; position: relative; display: inline-block; width: 3rem; height: 3rem; padding: 2px; margin: 0 0.5rem; border-radius: 2rem; cursor: pointer; }
+
+footer .contact .email :hover { opacity: 0.75; }
+
+footer .contact .email img { width: 100%; }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body .wrap video { width: 100%; margin-top: -30px; height: 100%; overflow: hidden; }
 
 body .main .about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: yellowgreen; height: 900px; }
@@ -32,7 +33,7 @@ body .main .archive .archive_wrap .gitBox .list li:hover { border-color: blue; -
 
 body .main .archive .archive_wrap .gitBox .list li a { text-decoration: none; color: blueviolet; }
 
-body .main .archive .archive_wrap .gitBox .list li a img { margin-top: 100px; width: 120px; }
+body .main .archive .archive_wrap .gitBox .list li a img { margin-top: 100px; width: 120px; background-color: #fff; }
 
 body .main .archive .archive_wrap .gitBox .list li a .txtBox { margin: 10px; background-color: #fff; margin-top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -44,30 +45,44 @@ body .main .archive .archive_wrap .gitBox .list li p { line-height: 1.5em; font-
 
 body .main .project { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: limegreen; height: 900px; }
 
-body .main .contact { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: cadetblue; height: 550px; }
+body .main .project .project_wrap { padding: 50px; /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */ /* 슬라이드들 옆으로 정렬 */ /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */ /* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/ /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/ }
 
-body .main .contact .contact_wrap { padding: 50px; }
+body .main .project .project_wrap h2 { width: 1200px; font-size: 40px; font-weight: 600; background-color: #fff; }
 
-body .main .contact .contact_wrap h2 { width: 1200px; font-size: 40px; font-weight: 600; background-color: #fff; }
+body .main .project .project_wrap #slideShow { width: 800px; height: 300px; position: relative; margin: 50px auto; overflow: hidden; /*리스트 형식으로 이미지를 일렬로 정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은 hidden으로 숨겨줘야됨*/ }
 
-body .main .contact .contact_wrap .contact_box { height: 300px; background-color: aquamarine; }
+body .main .project .project_wrap .slides { position: absolute; left: 0; top: 0; width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */ -webkit-transition: left 0.5s ease-out; transition: left 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/ }
 
-body .main .contact .contact_wrap .contact_box ul { font-size: 25px; padding-left: 120px; margin-top: 100px; }
+body .main .project .project_wrap .slides li:first-child { margin-left: 100px; }
 
-body .main .contact .contact_wrap .contact_box ul li { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+body .main .project .project_wrap .slides li:not(:last-child) { float: left; margin-right: 100px; }
 
-body .main .contact .contact_wrap .contact_box ul li dl dt { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 20px; }
+body .main .project .project_wrap .slides li { float: left; }
 
-body .top_button span a { z-index: 2; width: 45px; height: 45px; text-align: center; position: fixed; top: 85%; right: 3%; background-color: red; border-radius: 25px; }
+body .main .project .project_wrap .controller span { position: absolute; background-color: transparent; color: black; text-align: center; border-radius: 50%; padding: 10px 20px; top: 50%; font-size: 1.3em; cursor: pointer; }
 
-body .top_button span a img { width: 35px; height: 35px; }
+body .main .project .project_wrap .controller span:hover { background-color: rgba(128, 128, 128, 0.11); }
 
-body .popup { position: fixed; z-index: 1000; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; display: block; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); border: 3px solid red; }
+body .main .project .project_wrap .prev { left: 10px; }
 
-body .popup .contents { padding: 50px; }
+body .main .project .project_wrap .prev:hover { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
 
-body .popup .btns { display: -webkit-box; display: -ms-flexbox; display: flex; }
+body .main .project .project_wrap .next { right: 10px; }
 
-body .popup .btns button { width: 50%; padding: 20px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #ccc; border-right: 1px solid #fff; color: #666; }
+body .main .project .project_wrap .next:hover { -webkit-transform: translateX(10px); transform: translateX(10px); }
 
-body .popup .btns button.oneday { background-color: #ccc; }
+body .main .project .project_wrap .project_box { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 100px; position: relative; display: inline-block; }
+
+.top_button span a { z-index: 2; width: 45px; height: 45px; text-align: center; position: fixed; top: 85%; right: 3%; background-color: red; border-radius: 25px; }
+
+.top_button span a img { width: 35px; height: 35px; }
+
+.popup { position: fixed; z-index: 1000; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; display: block; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); border: 3px solid red; }
+
+.popup .contents { padding: 50px; }
+
+.popup .btns { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.popup .btns button { width: 50%; padding: 20px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #ccc; border-right: 1px solid #fff; color: #666; }
+
+.popup .btns button.oneday { background-color: #ccc; }

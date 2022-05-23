@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <script src="../js/main.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -31,6 +33,10 @@
     <div class="wrap">
       <video src="../video/coding.mp4" muted autoplay loop></video>
     </div>
+    <div class="iconScroll">
+      <span class="icon"></span>
+      <span class="txt">scroll</span>
+    </div>
     <div class="main">
       <div id="about" class="about">
         <div class="about_wrap">
@@ -40,7 +46,7 @@
             <p class="txt">연습입니다.</p>
           </div>
           <div class="pic">
-            <img src="../images/lee.jpg" alt="" />
+            <img src="../images/main/lee.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -51,8 +57,7 @@
             <ul class="list">
               <li>
                 <a href="https://github.com/soonla">
-                  <img src="../images/github.png" alt="" />
-
+                  <img src="../images/main/github.png" alt="" />
                   <div class="txtBox">
                     <div class="link">
                       <p class="btn">Git Hub</p>
@@ -65,7 +70,7 @@
               </li>
               <li>
                 <a href="https://soonla.tistory.com/">
-                  <img src="../images/blog.png" alt="" />
+                  <img src="../images/main/blog.png" alt="" />
                   <div class="txtBox">
                     <div class="link">
                       <p class="btn">TIstory</p>
@@ -82,10 +87,44 @@
       <div id="project" class="project">
         <div class="project_wrap">
           <h2>Project</h2>
+          <div id="slideShow">
+            <ul class="slides">
+              <li><img src="../images/main/noel_portfolio.png" alt="" /></li>
+              <li><img src="../images/main/noel_portfolio.png" alt="" /></li>
+            </ul>
+            <p class="controller">
+              <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
+              <span class="prev">&lang;</span> <span class="next">&rang;</span>
+            </p>
+          </div>
+
           <div class="project_box">
             <ul>
-              <li></li>
+              <!-- 냅둬봐 일단 연습해봄-->
+              <!--
+              <li>
+                <div>
+                  <a href=""><img src="../images/main/noel_portfolio.png" alt="" /></a>
+                  <div class="txtBox">
+                    <span
+                      ><p class="project_title">프로젝트 노엘로힐스</p>
+                      <p class="project_txt">프론트엔드를 맡아 수행하였습니다.</p></span
+                    >
+                  </div>
+                </div>
+              </li>
+               <li>
+                <div>
+                  <a href=""><img src="../images/main/noel_portfolio.png" alt="" /></a>
+                  <div class="txtBox">
+                    <p class="project_title">포트폴리오</p>
+                    <p class="project_txt">현재 포트폴리오 페이지를 제작하였습니다.</p>
+                  </div>
+                </div>
+              </li> -->
             </ul>
+            <p class="controller"></p>
+            <span class="prev">&lang;</span> <span class="next">&rang;</span>
           </div>
         </div>
       </div>
@@ -109,22 +148,19 @@
     <footer>
       <div class="contact">
         <div class="phone">
-          <img src="../images/telephone.png" alt="phone" />
+          <a href="tel:010-4525-6169"><img src="../images/footer/phone-call.png" alt="phone" /></a>
         </div>
         <div class="git">
-          <img src="../images/github (1).png" alt="" />
+          <a href="https://github.com/soonla"><img src="../images/footer/github.png" alt="" /></a>
         </div>
         <div class="tistory">
-          <img src="../images/tistory.png" alt="" />
+          <a href="https://soonla.tistory.com/"><img src="../images/footer/tistory.png" alt="" /></a>
         </div>
         <div class="instagram">
-          <img src="../images/instagram.png" alt="" />
-        </div>
-        <div class="facebook">
-          <img src="../images/facebook.png" alt="" />
+          <a href="https://www.instagram.com/mucho_macho.man/"><img src="../images/footer/instagram.png" alt="" /></a>
         </div>
         <div class="email">
-          <img src="../images/mail.png" alt="" />
+          <a href="mailto:treelee96@naver.com"><img src="../images/footer/mail.png" alt="" /></a>
         </div>
       </div>
       <p>all copyright reserved by <strong>Lee's media lab</strong></p>
