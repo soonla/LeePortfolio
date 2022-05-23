@@ -16,6 +16,12 @@ body header .contents .gnb ul li { margin-right: 85px; margin-top: 20px; }
 
 body header .contents .gnb ul li a { text-decoration: none; color: #fff; font-size: 25px; font-weight: 500; }
 
-body footer { background-color: #111; color: #fff; padding: 80px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; font-size: 20px; text-transform: uppercase; }
+body footer { background-color: magenta; color: #fff; padding: 80px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; font-size: 20px; text-transform: uppercase; }
 
 body footer strong { font-weight: 700; }
+
+body footer .contact div { text-align: center; position: relative; }
+
+body footer .contact div img { margin: 10px; height: 50px; border-radius: 10px; background-color: #fff; }
+
+body footer .contact div .tistory { color: #111; }

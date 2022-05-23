@@ -44,13 +44,13 @@ body .main .archive .archive_wrap .gitBox .list li p { line-height: 1.5em; font-
 
 body .main .project { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: limegreen; height: 900px; }
 
-body .main .contact { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: cadetblue; height: 900px; }
+body .main .contact { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: cadetblue; height: 550px; }
 
 body .main .contact .contact_wrap { padding: 50px; }
 
 body .main .contact .contact_wrap h2 { width: 1200px; font-size: 40px; font-weight: 600; background-color: #fff; }
 
-body .main .contact .contact_wrap .contact_box { height: 700px; background-color: aquamarine; }
+body .main .contact .contact_wrap .contact_box { height: 300px; background-color: aquamarine; }
 
 body .main .contact .contact_wrap .contact_box ul { font-size: 25px; padding-left: 120px; margin-top: 100px; }
 

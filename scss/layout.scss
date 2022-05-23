@@ -47,7 +47,7 @@ body {
   }
 
   footer {
-    background-color: #111;
+    background-color: magenta;
     color: #fff;
     padding: 80px 0;
     display: flex;
@@ -57,6 +57,21 @@ body {
     text-transform: uppercase;
     strong {
       font-weight: 700;
+    }
+    .contact {
+      div {
+        text-align: center;
+        position: relative;
+        img {
+          margin: 10px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: #fff;
+        }
+        .tistory {
+          color: #111;
+        }
+      }
     }
   }
 }
