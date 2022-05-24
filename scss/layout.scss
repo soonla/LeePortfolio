@@ -1,3 +1,5 @@
+@import "vars";
+@import "mixins";
 body {
   width: 100%;
   height: 100%;
@@ -41,7 +43,7 @@ body {
         // }
       }
       .gnb /*메뉴*/ {
-        margin-left: 540px;
+        margin-left: 740px;
 
         ul {
           display: flex;
@@ -57,7 +59,7 @@ body {
 
             a {
               text-decoration: none;
-              color: #fff;
+              color: #b9b5b6;
               font-size: 25px;
               font-weight: 500;
             }
@@ -168,6 +170,184 @@ footer {
       }
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+//반응형 시작
+@media all and (max-width: 450px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+
+    header {
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: #fff;
+      .progress_container {
+        width: 100%;
+        height: 3px;
+        background: #f6f6f6;
+        .progress_bar {
+          height: 3px;
+          background: red;
+          width: 0%;
+        }
+      }
+      .contents {
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        .logo {
+          margin-left: -30px;
+          div {
+            margin-top: 20px;
+            color: cornflowerblue;
+            font-size: 30px;
+            font-weight: 400;
+          }
+          // img {
+          //   width: 100px;
+          //   height: 100px;
+          // }
+        }
+        .gnb /*메뉴*/ {
+          margin-left: 1px;
+
+          ul {
+            display: flex;
+            padding-right: 300px;
+            li {
+              margin-top: 20px;
+              margin-right: 10px;
+
+              :hover {
+                color: red;
+                border-bottom: 3px solid blue;
+                transition: all 0.95s ease;
+              }
+              a {
+                text-decoration: none;
+                color: #b9b5b6;
+                font-size: 15px;
+
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 150px;
+    padding-top: 3rem;
+    background-color: #222;
+    text-align: center;
+    p {
+      margin-top: 30px;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #fff;
+      strong {
+        font-weight: 700;
+      }
+    }
+    .contact {
+      margin-bottom: 1rem;
+
+      .phone {
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        :hover {
+          opacity: 0.75;
+        }
+        img {
+        }
+      }
+      .git {
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        :hover {
+          opacity: 0.75;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .tistory {
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        :hover {
+          opacity: 0.75;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .instagram {
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        :hover {
+          opacity: 0.75;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      .email {
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        :hover {
+          opacity: 0.75;
+        }
+        img {
+          width: 100%;
+        }
       }
     }
   }
