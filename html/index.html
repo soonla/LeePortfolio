@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <script src="../js/main.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/gsap/gsap.min.js"></script>
     <script src="../js/splitting.min.js"></script>
     <script src="../js/jquery_main.js" defer></script>
+    <script src="../js/jquery.fade-in.js"></script>
     <script src="../js/js.cookie.min.js"></script>
     <script>
-      // When the user scrolls the page, execute myFunction
+      //스크롤 인디케이터 (상단 게이지 스크롤 바)
       window.onscroll = function () {
         myFunction();
       };
@@ -40,10 +42,10 @@
         </div>
         <div class="gnb">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#archive">Archiving</a></li>
-            <li><a href="#project">Project</a></li>
+            <li><a class="gnb_home" href="">Home</a></li>
+            <li><a class="gnb_about" href="#about">About</a></li>
+            <li><a class="gnb_archive" href="#archive">Archiving</a></li>
+            <li><a class="gnb_project" href="#project">Project</a></li>
           </ul>
         </div>
       </div>
@@ -65,19 +67,17 @@
           </h2>
           <div class="txtBox">
             <div class="title">반갑습니다 이성규 입니다.</div>
-
             <div class="txt">
               <p>
-                작은 것 도 메모하는 꼼꼼한 성격을 갖고있습니다. <br /><br />
+                작은 것 도 메모하는 꼼꼼한 성격을 갖고있습니다. <br />
                 일기로 시작한 메모하는 습관은 사소한 부분도 놓치지 않게 도와주었고 일의 완성도를 높여주었습니다.<br /><br />
-                이 메모를 토대로 평소 동료에게 중요한 일정을 알려주었습니다.<br /><br />
                 자신의 일 뿐만 아니라 주변까지 챙기는 모습으로 <br />
                 타부서와 공조하고 동료들과 협력하여 업무의 <br />완전성에 도움이 되겠습니다.
               </p>
             </div>
           </div>
           <div class="pic">
-            <img src="../images/main/lee.jpg" alt="" />
+            <img class="img1" src="../images/main/lee.jpg" class="fade-in" alt="" />
           </div>
         </div>
       </div>
@@ -98,9 +98,10 @@
                     </div>
                   </div>
                 </a>
+                <div>소스코드 저장소입니다.</div>
                 <p>과거 프로젝트</p>
                 <p>코딩 연습</p>
-                <p>학원 수업</p>
+                <p>수업 내용</p>
               </li>
               <li>
                 <a href="https://soonla.tistory.com/">
@@ -111,8 +112,9 @@
                     </div>
                   </div>
                 </a>
-                <p>필기</p>
-                <p>손코딩</p>
+                <div>공부 및 지식 공유 목적의 블로그입니다.</div>
+                <p>공부한 것을 나의 것으로 만들기 위한 기록</p>
+                <p>지식 공유를 통해 선한영향력 행사</p>
               </li>
             </ul>
           </div>
@@ -128,7 +130,7 @@
             <div class="section">
               <input type="radio" name="slide" id="slide01" checked />
               <input type="radio" name="slide" id="slide02" />
-              <input type="radio" name="slide" id="slide03" />
+              <!-- <input type="radio" name="slide" id="slide03" /> -->
               <div class="slide_wrap">
                 <ul class="slide_list">
                   <li>
@@ -138,12 +140,12 @@
                       <img class="project_main" src="../images/main/noel_portfolio.png" alt="" />
                       <label for="slide02" class="right"></label>
                     </a>
+
                     <div class="project_txt">
                       <div class="title">Noelo_hills 클론 프로젝트</div>
                       <div class="project_txt_box">
                         <div class="sub">
-                          TIS정보기술교육센터에서 <br />
-                          팀원들과 제작하였습니다.
+                          팀원들과 제작한
                           <br />
                           프론트엔드를 맡아 <br />
                           진행 하였습니다.
@@ -154,7 +156,7 @@
                               <img src="../images/main/github.png" alt="" /> &nbsp;:&nbsp;
                               <a href="https://github.com/soonla/LeePortfolio">https://github.com/soonla/LeePortfolio</a>
                             </p>
-                            <div class="sub_title">SKILLS &nbsp;: HTML, CSS, JS</div>
+                            <div class="sub_title">사용 기술 &nbsp;: HTML, CSS, JS</div>
                           </div>
                         </div>
                       </div>
@@ -164,16 +166,16 @@
                     <!--2번-->
                     <a>
                       <label for="slide01" class="left"></label>
-                      <img src="../images/main/noel_portfolio.png" alt="" />
+                      <img class="img2" src="../images/main/noel_portfolio.png" alt="" />
                       <!-- <label for="slide01" class="right"></label> -->
                       <div class="project_txt">
                         <div class="title">개인 포트폴리오</div>
                         <div class="project_txt_box">
                           <div class="sub">
-                            프론트엔드 개발자 <br />
-                            포트폴리오입니다. <br />
-                            111 <br />
-                            111 <br />
+                            개인 포트폴리오용 <br />
+                            반응형 웹사이트로 <br />
+                            github.io로 <br />
+                            서버를 구동하였습니다. <br />
                           </div>
                           <div class="link">
                             <div>
@@ -181,7 +183,7 @@
                                 <img src="../images/main/github.png" alt="" /> &nbsp;:&nbsp;
                                 <a href="https://github.com/soonla/LeePortfolio">https://github.com/soonla/LeePortfolio</a>
                               </p>
-                              <div class="sub_title">SKILLS &nbsp;: HTML, CSS, JS</div>
+                              <div class="sub_title">사용 기술 &nbsp;: HTML, CSS, JS</div>
                             </div>
                           </div>
                         </div>
@@ -222,7 +224,7 @@
     </div>
     <div class="top_button">
       <span>
-        <a href=""><img src="../images/upload.png" alt="" /></a>
+        <a href="" class="btn"><img src="../images/upload.png" alt="" /></a>
       </span>
     </div>
     <aside class="popup" id="popup">

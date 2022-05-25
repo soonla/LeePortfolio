@@ -28,6 +28,7 @@ body {
     .contents {
       position: fixed;
       z-index: 2;
+
       display: flex;
       .logo {
         margin-left: 30px;
@@ -45,8 +46,10 @@ body {
       .gnb /*메뉴*/ {
         margin-left: 740px;
 
+        padding-top: 20px;
         ul {
           display: flex;
+
           li {
             margin-right: 85px;
             margin-top: 20px;
@@ -54,10 +57,11 @@ body {
             :hover {
               color: red;
               border-bottom: 3px solid blue;
-              transition: all 0.95s ease;
+              transition: all 0.7s ease;
             }
 
             a {
+              scroll-behavior: smooth;
               text-decoration: none;
               color: #b9b5b6;
               font-size: 25px;
@@ -205,9 +209,10 @@ footer {
       .contents {
         position: fixed;
         z-index: 2;
+
         display: flex;
         .logo {
-          margin-left: -30px;
+          margin-left: 30px;
           div {
             margin-top: 20px;
             color: cornflowerblue;
@@ -220,25 +225,27 @@ footer {
           // }
         }
         .gnb /*메뉴*/ {
-          margin-left: 1px;
+          margin-left: 740px;
 
+          padding-top: 20px;
           ul {
             display: flex;
-            padding-right: 300px;
+
             li {
+              margin-right: 85px;
               margin-top: 20px;
-              margin-right: 10px;
 
               :hover {
                 color: red;
                 border-bottom: 3px solid blue;
-                transition: all 0.95s ease;
+                transition: all 0.7s ease;
               }
+
               a {
+                scroll-behavior: smooth;
                 text-decoration: none;
                 color: #b9b5b6;
-                font-size: 15px;
-
+                font-size: 25px;
                 font-weight: 500;
               }
             }
@@ -277,8 +284,6 @@ footer {
         cursor: pointer;
         :hover {
           opacity: 0.75;
-        }
-        img {
         }
       }
       .git {
