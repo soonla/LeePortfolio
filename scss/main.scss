@@ -134,8 +134,7 @@ body {
           }
         }
         .pic {
-          float: right;
-
+          display: flex;
           img {
             margin-top: 120px;
             width: 60%;
@@ -453,7 +452,7 @@ body {
                   .project_txt {
                     width: 750px;
                     text-align: center;
-                    margin-top: -250px;
+                    margin-top: -75px;
                     padding: 10px;
                     .title {
                       display: flex;
@@ -519,7 +518,7 @@ body {
 
                   .project_txt {
                     position: relative;
-                    margin-top: -250px;
+                    margin-top: -75px;
                     padding: 10px;
                     .title {
                       display: flex;
@@ -784,7 +783,8 @@ body {
             padding: 30px;
 
             .title {
-              font-size: 25px;
+              word-break: keep-all;
+              font-size: 30px;
               background-color: #f5f2e1;
               line-height: 1.4;
             }
@@ -794,22 +794,6 @@ body {
               font-size: 20px;
               background-color: #f5f2e1;
               line-height: 1.4;
-            }
-          }
-
-          .pic {
-            img {
-              margin-top: 120px;
-              width: 60%;
-              animation: fadein 2s;
-            }
-            @keyframes fadein {
-              from {
-                opacity: 0;
-              }
-              to {
-                opacity: 1;
-              }
             }
           }
         }
@@ -914,7 +898,7 @@ body {
         display: flex;
         margin: 20px 0 20px 0;
         justify-content: center;
-        height: 550px;
+        height: 900px;
         color: #2d2e2e;
         .project_wrap {
           width: 250px;
@@ -969,7 +953,7 @@ body {
                 display: none;
               }
 
-              .slide_wrap {
+              .slide_wrap01 {
                 width: 200px;
                 margin: 80px auto;
                 overflow: hidden;
@@ -977,11 +961,9 @@ body {
                 border-radius: 25px;
                 .slide_list {
                   white-space: nowrap;
-                  li {
+                  .slide_list_1 {
                     display: inline-block;
                     vertical-align: middle;
-                    width: calc(100%-10px);
-                    transition: all 0.5s;
 
                     a {
                       display: block;
@@ -1030,12 +1012,107 @@ body {
                         width: auto;
                         text-align: center;
                         display: flex;
-                        margin: 30px 0 0 10px;
+                        margin: 30px 0 0 0;
                         padding: 0;
-                        font-size: 20px;
+                        font-size: 18px;
 
                         .sub {
                           font-size: 16px;
+
+                          line-height: 1.25;
+                        }
+                        .link {
+                          display: block;
+                          div {
+                            img {
+                              width: 30px;
+                              margin: 10px 0 0 -30px;
+                            }
+                            a {
+                              img {
+                                display: block;
+                              }
+                              .portfolio_link {
+                                display: none;
+                              }
+                            }
+                          }
+                        }
+
+                        .sub_title {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .slide_wrap02 {
+                width: 200px;
+                margin: 80px auto;
+                overflow: hidden;
+                border: 3px solid #777;
+                border-radius: 25px;
+                .slide_list {
+                  white-space: nowrap;
+                  .slide_list_1 {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    a {
+                      display: block;
+                      position: relative;
+
+                      img {
+                        margin-top: -5px;
+                        width: 100%;
+                      }
+                      label {
+                        position: absolute;
+                        z-index: 10;
+                        top: 100%;
+                        transform: translateY(-50%);
+                        padding: 18px;
+                        margin: auto;
+                        cursor: pointer;
+                      }
+
+                      .left {
+                        margin-top: 10px;
+                        left: 20px;
+                        background: url(../images/main/project/left-btn.png) center center / 100% no-repeat;
+
+                        overflow: hidden;
+                      }
+                      .right {
+                        right: 20px;
+                        background: url(../images/main/project/right-btn.png) center center / 100% no-repeat;
+
+                        overflow: hidden;
+                      }
+                    }
+
+                    .project_txt {
+                      background-color: #f5f2e1;
+
+                      .title {
+                        margin-top: 20px;
+                        text-align: center;
+                        font-size: 16px;
+                        word-break: keep-all;
+                        font-weight: 600;
+                      }
+                      .project_txt_box {
+                        width: auto;
+                        text-align: center;
+                        display: flex;
+                        margin: 30px 0 0 0;
+                        padding: 0;
+                        font-size: 18px;
+
+                        .sub {
+                          font-size: 16px;
+
                           line-height: 1.25;
                         }
                         .link {

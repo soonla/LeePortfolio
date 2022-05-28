@@ -45,7 +45,6 @@ body {
       }
       .gnb /*메뉴*/ {
         margin-left: 740px;
-
         padding-top: 20px;
         ul {
           display: flex;
@@ -55,15 +54,15 @@ body {
             margin-top: 20px;
 
             :hover {
-              color: red;
-              border-bottom: 3px solid blue;
+              color: darksalmon;
+              border-bottom: 2px solid teal;
               transition: all 0.7s ease;
             }
 
             a {
               scroll-behavior: smooth;
               text-decoration: none;
-              color: #b9b5b6;
+              color: cadetblue;
               font-size: 25px;
               font-weight: 500;
             }
@@ -255,7 +254,7 @@ footer {
           position: fixed;
           height: 50px;
           display: flex;
-
+          right: 0;
           .all {
             background-color: blueviolet;
             width: 50px;

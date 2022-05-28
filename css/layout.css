@@ -18,9 +18,9 @@ body header .contents .gnb ul { display: -webkit-box; display: -ms-flexbox; disp
 
 body header .contents .gnb ul li { margin-right: 85px; margin-top: 20px; }
 
-body header .contents .gnb ul li :hover { color: red; border-bottom: 3px solid blue; -webkit-transition: all 0.7s ease; transition: all 0.7s ease; }
+body header .contents .gnb ul li :hover { color: darksalmon; border-bottom: 2px solid teal; -webkit-transition: all 0.7s ease; transition: all 0.7s ease; }
 
-body header .contents .gnb ul li a { scroll-behavior: smooth; text-decoration: none; color: #b9b5b6; font-size: 25px; font-weight: 500; }
+body header .contents .gnb ul li a { scroll-behavior: smooth; text-decoration: none; color: cadetblue; font-size: 25px; font-weight: 500; }
 
 footer { height: 11rem; padding-top: 3rem; background-color: #222; text-align: center; }
 
@@ -72,7 +72,7 @@ footer .contact .email img { width: 100%; }
   body header .contents .gnb ul li { margin-top: 20px; }
   body header .contents .gnb ul li :hover { color: red; border-bottom: 3px solid blue; -webkit-transition: all 0.7s ease; transition: all 0.7s ease; }
   body header .contents .gnb ul li a { scroll-behavior: smooth; text-decoration: none; color: #b9b5b6; font-size: 25px; font-weight: 500; }
-  body header .contents .etc { position: fixed; height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+  body header .contents .etc { position: fixed; height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; right: 0; }
   body header .contents .etc .all { background-color: blueviolet; width: 50px; height: 50px; position: relative; }
   body header .contents .etc .all span { display: block; width: 30px; height: 2px; background-color: red; position: absolute; left: 10px; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
   body header .contents .etc .all span:nth-child(1) { top: 14px; }

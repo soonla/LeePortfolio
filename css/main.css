@@ -41,7 +41,7 @@ body .main .about .about_wrap .txtBox .contact { margin: 50px 0 0 50px; text-ali
 
 body .main .about .about_wrap .txtBox .contact div span img { width: 50px; }
 
-body .main .about .about_wrap .pic { float: right; }
+body .main .about .about_wrap .pic { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 body .main .about .about_wrap .pic img { margin-top: 120px; width: 60%; -webkit-animation: fadein 2s; animation: fadein 2s; }
 
@@ -157,7 +157,7 @@ body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_lis
 
 body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_2 a .right01:hover { background-color: gainsboro; border-radius: 25px; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; }
 
-body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_2 .project_txt { width: 750px; text-align: center; margin-top: -250px; padding: 10px; }
+body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_2 .project_txt { width: 750px; text-align: center; margin-top: -75px; padding: 10px; }
 
 body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_2 .project_txt .title { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; text-align: center; font-size: 40px; font-weight: 600; }
 
@@ -181,7 +181,7 @@ body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_lis
 
 body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_3 a .right01:hover { background-color: gainsboro; border-radius: 25px; -webkit-transition: all 0.45s ease; transition: all 0.45s ease; }
 
-body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_3 .project_txt { position: relative; margin-top: -250px; padding: 10px; }
+body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_3 .project_txt { position: relative; margin-top: -75px; padding: 10px; }
 
 body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_3 .project_txt .title { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; text-align: center; font-size: 40px; font-weight: 600; }
 
@@ -250,13 +250,8 @@ body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_lis
   body .main .about .about_wrap h2 { width: 250px; text-align: center; font-size: 20px; font-weight: 600; background-color: #f5f2e1; }
   body .main .about .about_wrap h2 span { width: 100px; height: 1500px; padding: 10px; border-bottom: 2px solid #111; background-image: url(../images/main/badge.png); background-size: contain; background-position: center center; background-repeat: no-repeat; }
   body .main .about .about_wrap .txtBox { font-size: 20px; text-align: center; width: 200px; height: 300px; position: relative; padding: 30px; }
-  body .main .about .about_wrap .txtBox .title { font-size: 25px; background-color: #f5f2e1; line-height: 1.4; }
+  body .main .about .about_wrap .txtBox .title { word-break: keep-all; font-size: 30px; background-color: #f5f2e1; line-height: 1.4; }
   body .main .about .about_wrap .txtBox .txt { margin-top: 30px; font-size: 20px; background-color: #f5f2e1; line-height: 1.4; }
-  body .main .about .about_wrap .pic img { margin-top: 120px; width: 60%; -webkit-animation: fadein 2s; animation: fadein 2s; }
-  @-webkit-keyframes fadein { from { opacity: 0; }
-    to { opacity: 1; } }
-  @keyframes fadein { from { opacity: 0; }
-    to { opacity: 1; } }
   body .main .archive { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 20px 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 1050px; }
   body .main .archive .archive_wrap { width: 250px; margin-top: 50px; border: 3px solid #888; border-radius: 25px; }
   body .main .archive .archive_wrap .margin { width: 200px; height: 2px; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 0 30px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #333; }
@@ -272,7 +267,7 @@ body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_lis
   body .main .archive .archive_wrap .gitBox .list li a .txtBox .link .btn { font-weight: 550; font-size: 25px; }
   body .main .archive .archive_wrap .gitBox .list li div { margin: 20px 0 20px 0; font-size: 18px; font-weight: 600; }
   body .main .archive .archive_wrap .gitBox .list li p { line-height: 1.5em; font-size: 16px; font-weight: 400; }
-  body .main .project { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 20px 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 550px; color: #2d2e2e; }
+  body .main .project { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 20px 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 900px; color: #2d2e2e; }
   body .main .project .project_wrap { width: 250px; margin-top: 50px; border: 3px solid #888; border-radius: 25px; }
   body .main .project .project_wrap .margin { width: 200px; height: 2px; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 0 30px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #333; }
   body .main .project .project_wrap h2 { width: 250px; text-align: center; font-size: 20px; font-weight: 600; background-color: #f5f2e1; }
@@ -283,23 +278,40 @@ body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_lis
   body .main .project .project_wrap .project_box .section [id="slide03"]:checked ~ .slide_wrap .slide_list > li { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
   body .main .project .project_wrap .project_box .section { /*화면적용*/ }
   body .main .project .project_wrap .project_box .section input { display: none; }
-  body .main .project .project_wrap .project_box .section .slide_wrap { width: 200px; margin: 80px auto; overflow: hidden; border: 3px solid #777; border-radius: 25px; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list { white-space: nowrap; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li { display: inline-block; vertical-align: middle; width: calc(100%-10px); -webkit-transition: all 0.5s; transition: all 0.5s; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li a { display: block; position: relative; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li a img { margin-top: -5px; width: 100%; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li a label { position: absolute; z-index: 10; top: 100%; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 18px; margin: auto; cursor: pointer; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li a .left { margin-top: 10px; left: 20px; background: url(../images/main/project/left-btn.png) center center/100% no-repeat; overflow: hidden; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li a .right { right: 20px; background: url(../images/main/project/right-btn.png) center center/100% no-repeat; overflow: hidden; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt { background-color: #f5f2e1; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .title { margin-top: 20px; text-align: center; font-size: 16px; word-break: keep-all; font-weight: 600; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box { width: auto; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 30px 0 0 10px; padding: 0; font-size: 20px; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .sub { font-size: 16px; line-height: 1.25; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .link { display: block; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .link div img { width: 30px; margin: 10px 0 0 -30px; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .link div a img { display: block; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .link div a .portfolio_link { display: none; }
-  body .main .project .project_wrap .project_box .section .slide_wrap .slide_list li .project_txt .project_txt_box .sub_title { display: none; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 { width: 200px; margin: 80px auto; overflow: hidden; border: 3px solid #777; border-radius: 25px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list { white-space: nowrap; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 { display: inline-block; vertical-align: middle; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 a { display: block; position: relative; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 a img { margin-top: -5px; width: 100%; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 a label { position: absolute; z-index: 10; top: 100%; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 18px; margin: auto; cursor: pointer; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 a .left { margin-top: 10px; left: 20px; background: url(../images/main/project/left-btn.png) center center/100% no-repeat; overflow: hidden; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 a .right { right: 20px; background: url(../images/main/project/right-btn.png) center center/100% no-repeat; overflow: hidden; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt { background-color: #f5f2e1; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .title { margin-top: 20px; text-align: center; font-size: 16px; word-break: keep-all; font-weight: 600; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box { width: auto; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 30px 0 0 0; padding: 0; font-size: 18px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .sub { font-size: 16px; line-height: 1.25; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .link { display: block; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .link div img { width: 30px; margin: 10px 0 0 -30px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .link div a img { display: block; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .link div a .portfolio_link { display: none; }
+  body .main .project .project_wrap .project_box .section .slide_wrap01 .slide_list .slide_list_1 .project_txt .project_txt_box .sub_title { display: none; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 { width: 200px; margin: 80px auto; overflow: hidden; border: 3px solid #777; border-radius: 25px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list { white-space: nowrap; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 { display: inline-block; vertical-align: middle; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 a { display: block; position: relative; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 a img { margin-top: -5px; width: 100%; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 a label { position: absolute; z-index: 10; top: 100%; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 18px; margin: auto; cursor: pointer; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 a .left { margin-top: 10px; left: 20px; background: url(../images/main/project/left-btn.png) center center/100% no-repeat; overflow: hidden; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 a .right { right: 20px; background: url(../images/main/project/right-btn.png) center center/100% no-repeat; overflow: hidden; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt { background-color: #f5f2e1; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .title { margin-top: 20px; text-align: center; font-size: 16px; word-break: keep-all; font-weight: 600; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box { width: auto; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 30px 0 0 0; padding: 0; font-size: 18px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .sub { font-size: 16px; line-height: 1.25; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .link { display: block; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .link div img { width: 30px; margin: 10px 0 0 -30px; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .link div a img { display: block; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .link div a .portfolio_link { display: none; }
+  body .main .project .project_wrap .project_box .section .slide_wrap02 .slide_list .slide_list_1 .project_txt .project_txt_box .sub_title { display: none; }
   .top_button span a { z-index: 2; width: 45px; height: 45px; text-align: center; position: fixed; top: 85%; right: 3%; background-color: #fff; border-radius: 25px; }
   .top_button span a img { width: 35px; height: 35px; }
   .popup { position: fixed; z-index: 1000; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; display: block; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); border: 3px solid #666; }
