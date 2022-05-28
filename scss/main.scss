@@ -71,6 +71,7 @@ body {
         margin-top: 50px;
         border: 3px solid #888;
         border-radius: 25px;
+        background-color: #f5f2e1;
         .margin {
           width: 600px;
           height: 2px;
@@ -245,7 +246,7 @@ body {
       display: flex;
       justify-content: center;
       background-color: #f5f2e1;
-      height: 950px;
+      height: 1630px;
       .project_wrap {
         margin: 50px 0 20px 0;
         border: 3px solid #888;
@@ -280,17 +281,27 @@ body {
         .project_box {
           .section {
             /*슬라이드화면*/
-            [id="slide01"]:checked ~ .slide_wrap .slide_list > li {
+            //1번째 개인프로젝트
+            [id="portfolio_slide01"]:checked ~ .slide_wrap01 .slide_list > li {
               transform: translateX(0%);
             }
 
-            [id="slide02"]:checked ~ .slide_wrap .slide_list > li {
+            [id="portfolio_slide02"]:checked ~ .slide_wrap01 .slide_list > li {
               transform: translateX(-100%);
             }
             //3번
             // [id="slide03"]:checked ~ .slide_wrap .slide_list > li {
             //   transform: translateX(-200%);
             // }
+
+            //2번째 노엘로힐스
+            [id="noelo_slide01"]:checked ~ .slide_wrap02 .slide_list > li {
+              transform: translateX(0%);
+            }
+
+            [id="noelo_slide02"]:checked ~ .slide_wrap02 .slide_list > li {
+              transform: translateX(-100%);
+            }
           }
 
           .section {
@@ -299,12 +310,13 @@ body {
               display: none;
             }
 
-            .slide_wrap {
+            .slide_wrap01 {
               width: 800px;
               margin: 80px auto;
               overflow: hidden;
               border: 3px solid #777;
               border-radius: 25px;
+
               .slide_list {
                 white-space: nowrap;
                 li {
@@ -312,11 +324,9 @@ body {
                   vertical-align: middle;
                   width: 100%;
                   transition: all 0.5s;
-
                   a {
                     display: block;
                     position: relative;
-
                     img {
                       margin-top: -5px;
                       width: 100%;
@@ -355,10 +365,10 @@ body {
                     }
                     .project_txt_box {
                       text-align: space-around;
-                      display: flex;
-                      margin-top: 30px;
+                      margin-top: 20px;
                       padding: 10px 80px 10px;
                       font-size: 20px;
+                      display: inline-block;
 
                       .sub {
                         margin: 0 50px 20px 0;
@@ -366,15 +376,95 @@ body {
                       }
                       .link {
                         div {
-                          p {
-                            display: flex;
+                          text-align: center;
+                          img {
+                            width: 40px;
+                          }
+                          a {
+                            margin-top: 2px;
+                          }
+                        }
+                      }
+                      .sub_title {
+                        margin-top: 3px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .slide_wrap02 {
+              width: 800px;
+              margin: 80px auto;
+              overflow: hidden;
+              border: 3px solid #777;
+              border-radius: 25px;
 
-                            img {
-                              width: 30px;
-                            }
-                            a {
-                              margin-top: 2px;
-                            }
+              .slide_list {
+                white-space: nowrap;
+                li {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 100%;
+                  transition: all 0.5s;
+                  a {
+                    display: block;
+                    position: relative;
+                    img {
+                      margin-top: -5px;
+                      width: 100%;
+                    }
+                    label {
+                      position: absolute;
+                      z-index: 10;
+                      top: 80%;
+                      transform: translateY(-50%);
+                      padding: 50px;
+                      cursor: pointer;
+                    }
+
+                    .left {
+                      left: 30px;
+                      background: url(../images/main/project/left-btn.png) center center / 100% no-repeat;
+
+                      overflow: hidden;
+                    }
+                    .right {
+                      right: 30px;
+                      background: url(../images/main/project/right-btn.png) center center / 100% no-repeat;
+
+                      overflow: hidden;
+                    }
+                  }
+
+                  .project_txt {
+                    background-color: #f5f2e1;
+
+                    .title {
+                      margin-top: 20px;
+                      text-align: center;
+                      font-size: 30px;
+                      font-weight: 600;
+                    }
+                    .project_txt_box {
+                      text-align: space-around;
+                      margin-top: 20px;
+                      padding: 10px 80px 10px;
+                      font-size: 20px;
+                      display: inline-block;
+
+                      .sub {
+                        margin: 0 50px 20px 0;
+                        line-height: 1.15;
+                      }
+                      .link {
+                        div {
+                          text-align: center;
+                          img {
+                            width: 40px;
+                          }
+                          a {
+                            margin-top: 2px;
                           }
                         }
                       }
@@ -472,15 +562,11 @@ body {
 }
 
 //반응형 시작
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
   body {
     font-family: "Poppins", "Noto Sans KR", sans-serif;
     background-color: #f5f2e1;
-    margin: 0;
-    padding: 0;
     word-break: keep-all;
-    position: relative;
-    justify-content: center;
     .wrap {
       video {
         width: 100%;
@@ -491,7 +577,6 @@ body {
 
       img {
         width: 100%;
-
         height: 100%;
         overflow: hidden;
       }
@@ -673,7 +758,7 @@ body {
         display: flex;
         margin: 20px 0 20px 0;
         justify-content: center;
-        height: 950px;
+        height: 550px;
         color: #2d2e2e;
         .project_wrap {
           width: 250px;
@@ -729,7 +814,7 @@ body {
               }
 
               .slide_wrap {
-                width: 800px;
+                width: 200px;
                 margin: 80px auto;
                 overflow: hidden;
                 border: 3px solid #777;
@@ -739,7 +824,7 @@ body {
                   li {
                     display: inline-block;
                     vertical-align: middle;
-                    width: 100%;
+                    width: calc(100%-10px);
                     transition: all 0.5s;
 
                     a {
@@ -753,20 +838,22 @@ body {
                       label {
                         position: absolute;
                         z-index: 10;
-                        top: 80%;
+                        top: 100%;
                         transform: translateY(-50%);
-                        padding: 50px;
+                        padding: 18px;
+                        margin: auto;
                         cursor: pointer;
                       }
 
                       .left {
-                        left: 30px;
+                        margin-top: 10px;
+                        left: 20px;
                         background: url(../images/main/project/left-btn.png) center center / 100% no-repeat;
 
                         overflow: hidden;
                       }
                       .right {
-                        right: 30px;
+                        right: 20px;
                         background: url(../images/main/project/right-btn.png) center center / 100% no-repeat;
 
                         overflow: hidden;
@@ -779,36 +866,42 @@ body {
                       .title {
                         margin-top: 20px;
                         text-align: center;
-                        font-size: 30px;
+                        font-size: 16px;
+                        word-break: keep-all;
                         font-weight: 600;
                       }
                       .project_txt_box {
-                        text-align: space-around;
+                        width: auto;
+                        text-align: center;
                         display: flex;
-                        margin-top: 30px;
-                        padding: 10px 80px 10px;
+                        margin: 30px 0 0 10px;
+                        padding: 0;
                         font-size: 20px;
 
                         .sub {
-                          margin: 0 50px 20px 0;
-                          line-height: 1.15;
+                          font-size: 16px;
+                          line-height: 1.25;
                         }
                         .link {
+                          display: block;
                           div {
-                            p {
-                              display: flex;
-
+                            img {
+                              width: 30px;
+                              margin: 10px 0 0 -30px;
+                            }
+                            a {
                               img {
-                                width: 30px;
+                                display: block;
                               }
-                              a {
-                                margin-top: 2px;
+                              .portfolio_link {
+                                display: none;
                               }
                             }
                           }
                         }
+
                         .sub_title {
-                          margin-top: 3px;
+                          display: none;
                         }
                       }
                     }
@@ -831,7 +924,7 @@ body {
         position: fixed;
         top: 85%;
         right: 3%;
-        background-color: red;
+        background-color: #fff;
         border-radius: 25px;
         img {
           width: 35px;

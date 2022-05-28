@@ -110,9 +110,9 @@ function triggerJqueryFadeInQueue() {
 //   $(window).scroll(function () {
 //     var scroll = $(window).scrollTop();
 //     if (scroll > 1000) {
-//       $(".gnb").css("background", "#666");
+//       $(".gnb").css("background", "magenta");
 //     } else {
-//       $(".gnb").css("background", "#343a40");
+//       $(".gnb").css("background", "skyblue");
 //     }
 //   });
 // });
@@ -157,3 +157,16 @@ var animation = function () {
 };
 
 animation().init();
+
+//모바일 햄버거메뉴
+const btnAll = $(".all");
+btnAll.on("click", function () {
+  btnAll.toggleClass("on");
+});
+
+//스크롤 내렸을 때 div 효과
+
+AOS.init({
+  easing: "ease-out-back",
+  duration: 1000,
+});

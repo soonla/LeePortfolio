@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="../js/main.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -17,6 +18,7 @@
     <script src="../js/jquery_main.js" defer></script>
     <script src="../js/jquery.fade-in.js"></script>
     <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/scroll_motion.js"></script>
     <script>
       //스크롤 인디케이터 (상단 게이지 스크롤 바)
       window.onscroll = function () {
@@ -37,10 +39,9 @@
         <div class="progress_bar" id="myBar"></div>
       </div>
       <div class="contents">
-        <div class="logo">
-          <!-- <img src="../images/mouse.png" alt="" /> -->
-        </div>
+        <div class="logo"></div>
         <div class="gnb">
+          <div class="margin"></div>
           <ul>
             <li><a class="gnb_home" href="">Home</a></li>
             <li><a class="gnb_about" href="#about">About</a></li>
@@ -48,11 +49,18 @@
             <li><a class="gnb_project" href="#project">Project</a></li>
           </ul>
         </div>
+        <div class="etc">
+          <button class="all">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
     <div class="wrap">
       <video src="../video/coding.mp4" muted autoplay loop></video>
-      <!--<div><img src="../images/main/mainVisual01.jpg" alt="" /></div>-->
+      <!-- <div><img src="../images/main/mainVisual01.jpg" alt="" /></div> -->
     </div>
     <div class="iconScroll">
       <span class="icon"><div class="div">I</div></span>
@@ -60,12 +68,12 @@
     </div>
     <div class="main">
       <div id="about" class="about">
-        <div class="about_wrap">
+        <div class="about_wrap" data-aos="flip-right">
           <div class="margin"></div>
           <h2>
             <span>ABOUT ME</span>
           </h2>
-          <div class="txtBox">
+          <div class="txtBox" data-aos="fade-up">
             <div class="title">반갑습니다 이성규 입니다.</div>
             <div class="txt">
               <p>
@@ -77,12 +85,12 @@
             </div>
           </div>
           <div class="pic">
-            <img class="img1" src="../images/main/lee.jpg" class="fade-in" alt="" />
+            <img class="img1" src="../images/main/lee.jpg" data-aos="flip-left" alt="" />
           </div>
         </div>
       </div>
       <div id="archive" class="archive">
-        <div class="archive_wrap">
+        <div class="archive_wrap" data-aos="flip-left">
           <div class="margin"></div>
           <h2>
             <span>ARCHIVING</span>
@@ -98,7 +106,7 @@
                     </div>
                   </div>
                 </a>
-                <div>소스코드 저장소입니다.</div>
+                <div data-aos="zoom-out">소스코드 저장소입니다.</div>
                 <p>과거 프로젝트</p>
                 <p>코딩 연습</p>
                 <p>수업 내용</p>
@@ -112,7 +120,7 @@
                     </div>
                   </div>
                 </a>
-                <div>공부 및 지식 공유 목적의 블로그입니다.</div>
+                <div data-aos="zoom-out">공부 및 지식 공유 목적의 블로그입니다.</div>
                 <p>공부한 것을 나의 것으로 만들기 위한 기록</p>
                 <p>지식 공유를 통해 선한영향력 행사</p>
               </li>
@@ -121,69 +129,122 @@
         </div>
       </div>
       <div id="project" class="project">
-        <div class="project_wrap">
+        <div class="project_wrap" data-aos="flip-up">
           <div class="margin"></div>
           <h2>
             <span>PROJECT</span>
           </h2>
           <div class="project_box">
             <div class="section">
-              <input type="radio" name="slide" id="slide01" checked />
-              <input type="radio" name="slide" id="slide02" />
+              <input type="radio" name="slide" id="portfolio_slide01" checked />
+              <input type="radio" name="slide" id="portfolio_slide02" />
               <!-- <input type="radio" name="slide" id="slide03" /> -->
-              <div class="slide_wrap">
+              <input type="radio" name="slide" id="noelo_slide01" checked />
+              <input type="radio" name="slide" id="noelo_slide02" />
+              <!--개인포트폴리오-->
+              <div class="slide_wrap01">
                 <ul class="slide_list">
-                  <li>
-                    <!--1번-->
+                  <!--1번-->
+                  <li class="slide_list_1">
                     <a>
                       <!-- <label for="slide02" class="left"></label> -->
                       <img class="project_main" src="../images/main/noel_portfolio.png" alt="" />
-                      <label for="slide02" class="right"></label>
+                      <label for="portfolio_slide02" class="right"></label>
                     </a>
 
                     <div class="project_txt">
                       <div class="title">Noelo_hills 클론 프로젝트</div>
                       <div class="project_txt_box">
-                        <div class="sub">
-                          팀원들과 제작한
-                          <br />
-                          프론트엔드를 맡아 <br />
-                          진행 하였습니다.
-                        </div>
+                        <div class="sub">팀원들과 제작한 클론 사이트입니다. 프론트엔드를 맡아 진행 하였습니다.</div>
                         <div class="link">
                           <div>
-                            <p>
-                              <img src="../images/main/github.png" alt="" /> &nbsp;:&nbsp;
-                              <a href="https://github.com/soonla/LeePortfolio">https://github.com/soonla/LeePortfolio</a>
-                            </p>
-                            <div class="sub_title">사용 기술 &nbsp;: HTML, CSS, JS</div>
+                            <a href="https://github.com/soonla/noelo-hills"><img src="../images/main/github.png" alt="" /> </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <!--2번-->
+                  <!--2번-->
+                  <li class="slide_list_2">
                     <a>
-                      <label for="slide01" class="left"></label>
-                      <img class="img2" src="../images/main/noel_portfolio.png" alt="" />
+                      <label for="portfolio_slide01" class="left"></label>
+                      <img class="img2" src="../images/main/main.png" alt="" />
                       <!-- <label for="slide01" class="right"></label> -->
                       <div class="project_txt">
                         <div class="title">개인 포트폴리오</div>
                         <div class="project_txt_box">
-                          <div class="sub">
-                            개인 포트폴리오용 <br />
-                            반응형 웹사이트로 <br />
-                            github.io로 <br />
-                            서버를 구동하였습니다. <br />
-                          </div>
+                          <div class="sub">개인 포트폴리오용 반응형 웹사이트로 github.io로 서버를 구동하였습니다. <br /></div>
                           <div class="link">
                             <div>
-                              <p>
-                                <img src="../images/main/github.png" alt="" /> &nbsp;:&nbsp;
-                                <a href="https://github.com/soonla/LeePortfolio">https://github.com/soonla/LeePortfolio</a>
-                              </p>
-                              <div class="sub_title">사용 기술 &nbsp;: HTML, CSS, JS</div>
+                              <a href="https://github.com/soonla/LeePortfolio"><img src="../images/main/github.png" alt="" /> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- <li>
+                    //3번
+                    <a>
+                      <label for="slide02" class="left"></label>
+                      <img src="../images/main/mainVisual03.jpg" alt="" />
+                      <label for="slide01" class="right"></label>
+                      <div class="project_txt">
+                        <div class="title">Noelo_hills 클론 프로젝트</div>
+                        <div class="sub"></div>
+                        <div class="link">
+                          <div>
+                            <p>
+                              github &nbsp;:
+                              <a href="https://github.com/soonla/LeePortfolio">https://github.com/soonla/LeePortfolio</a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="sub_title">
+                          제작분야 &nbsp;:
+                          <img src="../images/main/project/html,css,js.jpg" alt="" style="width: 200px" />
+                        </div>
+                      </div>
+                    </a>
+                  </li> -->
+                </ul>
+              </div>
+              <!--노엘로힐스-->
+              <div class="slide_wrap02">
+                <ul class="slide_list">
+                  <!--1번-->
+                  <li class="slide_list_1">
+                    <a>
+                      <!-- <label for="slide02" class="left"></label> -->
+                      <img class="project_main" src="../images/main/noel_portfolio.png" alt="" />
+                      <label for="noelo_slide02" class="right"></label>
+                    </a>
+
+                    <div class="project_txt">
+                      <div class="title">Noelo_hills 클론 프로젝트</div>
+                      <div class="project_txt_box">
+                        <div class="sub">팀원들과 제작한 클론 사이트입니다. 프론트엔드를 맡아 진행 하였습니다.</div>
+                        <div class="link">
+                          <div>
+                            <a href="https://github.com/soonla/noelo-hills"><img src="../images/main/github.png" alt="" /> </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!--2번-->
+                  <li class="slide_list_2">
+                    <a>
+                      <label for="noelo_slide01" class="left"></label>
+                      <img class="img2" src="../images/main/main.png" alt="" />
+                      <!-- <label for="slide01" class="right"></label> -->
+                      <div class="project_txt">
+                        <div class="title">개인 포트폴리오</div>
+                        <div class="project_txt_box">
+                          <div class="sub">개인 포트폴리오용 반응형 웹사이트로 github.io로 서버를 구동하였습니다. <br /></div>
+                          <div class="link">
+                            <div>
+                              <a href="https://github.com/soonla/LeePortfolio"><img src="../images/main/github.png" alt="" /> </a>
                             </div>
                           </div>
                         </div>
@@ -217,7 +278,6 @@
                 </ul>
               </div>
             </div>
-            <ul></ul>
           </div>
         </div>
       </div>
